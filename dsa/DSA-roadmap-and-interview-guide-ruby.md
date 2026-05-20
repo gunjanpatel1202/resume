@@ -48,11 +48,29 @@ def max_subarray_sum(arr)
 end
 ```
 **Explanation:**
-Kadane's Algorithm is used to find the maximum sum of a contiguous subarray in linear time. It works by maintaining two variables: `curr_sum` for the current subarray sum and `max_sum` for the maximum sum encountered so far.
+Kadane's Algorithm is used to find the maximum sum of a contiguous subarray in linear time. It works by maintaining two variables: `curr_sum` for the current subarray sum and `max_sum` for the maximum sum encountered so far. At each step, the algorithm decides whether to include the current element in the existing subarray or start a new subarray.
+
+**Examples:**
+
+- **Example 1:**
+  - Input: `nums = [-2,1,-3,4,-1,2,1,-5,4]`
+  - Output: `6`
+  - Explanation: The subarray `[4,-1,2,1]` has the largest sum `6`.
+
+- **Example 2:**
+  - Input: `nums = [1]`
+  - Output: `1`
+  - Explanation: The subarray `[1]` has the largest sum `1`.
+
+- **Example 3:**
+  - Input: `nums = [5,4,-1,7,8]`
+  - Output: `23`
+  - Explanation: The subarray `[5,4,-1,7,8]` has the largest sum `23`.
 
 **Learning Summary:**
 - Learn how to optimize subarray problems using dynamic programming techniques.
 - Understand the importance of maintaining intermediate results to achieve linear time complexity.
+- Practice solving problems with varying input sizes and edge cases to strengthen understanding.
 
 #### Q3: Check if a string is a palindrome
 ```ruby
@@ -63,9 +81,22 @@ end
 **Explanation:**
 A palindrome is a string that reads the same backward as forward. This method compares the string with its reversed version to determine if it is a palindrome.
 
+**Examples:**
+
+- **Example 1:**
+  - Input: `str = "racecar"`
+  - Output: `true`
+  - Explanation: The string "racecar" reads the same backward as forward.
+
+- **Example 2:**
+  - Input: `str = "hello"`
+  - Output: `false`
+  - Explanation: The string "hello" does not read the same backward as forward.
+
 **Learning Summary:**
 - Understand the concept of palindromes.
 - Practice using Ruby's `reverse` method for string manipulation.
+- Explore edge cases such as empty strings or single-character strings.
 
 ---
 
@@ -84,9 +115,16 @@ end
 **Explanation:**
 A singly linked list is a data structure where each node points to the next node in the sequence. This implementation defines a `Node` class with `val` for the value and `next` for the pointer to the next node.
 
+**Examples:**
+
+- **Example 1:**
+  - Create a linked list with nodes having values `1 -> 2 -> 3`.
+  - Traverse the list to print values: `1, 2, 3`.
+
 **Learning Summary:**
 - Learn the structure of a singly linked list.
 - Understand how to define and link nodes in Ruby.
+- Practice traversing and manipulating linked lists.
 
 #### Q2: Reverse a linked list
 ```ruby
@@ -105,9 +143,17 @@ end
 **Explanation:**
 Reversing a linked list involves iterating through the list and reversing the direction of the `next` pointer for each node. The `prev` pointer keeps track of the reversed portion of the list.
 
+**Examples:**
+
+- **Example 1:**
+  - Input: `1 -> 2 -> 3 -> nil`
+  - Output: `3 -> 2 -> 1 -> nil`
+  - Explanation: The list is reversed by updating the `next` pointers.
+
 **Learning Summary:**
 - Practice pointer manipulation in linked lists.
 - Understand iterative approaches to reversing linked lists.
+- Explore edge cases such as empty lists or single-node lists.
 
 ---
 
@@ -123,9 +169,17 @@ stack.pop # => 2
 **Explanation:**
 A stack is a LIFO (Last In, First Out) data structure. Using Ruby arrays, `push` adds an element to the top of the stack, and `pop` removes the top element.
 
+**Examples:**
+
+- **Example 1:**
+  - Operations: `push(1), push(2), pop()`.
+  - Output: `2`.
+  - Explanation: The last element added (`2`) is the first to be removed.
+
 **Learning Summary:**
 - Understand the LIFO principle.
 - Learn how to use Ruby arrays to implement stack operations.
+- Practice implementing stack-based algorithms such as balancing parentheses.
 
 #### Q2: Implement a queue using an array
 ```ruby
@@ -137,9 +191,17 @@ queue.shift # => 1
 **Explanation:**
 A queue is a FIFO (First In, First Out) data structure. Using Ruby arrays, `push` adds an element to the end of the queue, and `shift` removes the first element.
 
+**Examples:**
+
+- **Example 1:**
+  - Operations: `push(1), push(2), shift()`.
+  - Output: `1`.
+  - Explanation: The first element added (`1`) is the first to be removed.
+
 **Learning Summary:**
 - Understand the FIFO principle.
 - Learn how to use Ruby arrays to implement queue operations.
+- Practice implementing queue-based algorithms such as BFS (Breadth-First Search).
 
 ---
 
