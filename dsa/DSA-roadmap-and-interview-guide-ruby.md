@@ -28,6 +28,12 @@ This roadmap will guide you through learning DSA concepts using Ruby, progressin
 arr = [1, 2, 3, 4]
 arr.reverse # => [4, 3, 2, 1]
 ```
+**Explanation:**
+The `reverse` method in Ruby reverses the order of elements in an array. It is a built-in method that simplifies reversing arrays without manually iterating through them.
+
+**Learning Summary:**
+- Understand how to use Ruby's built-in methods for common operations.
+- Practice writing manual implementations to deepen understanding of array manipulation.
 
 #### Q2: Find the maximum sum subarray (Kadane's Algorithm)
 ```ruby
@@ -41,6 +47,12 @@ def max_subarray_sum(arr)
   max_sum
 end
 ```
+**Explanation:**
+Kadane's Algorithm is used to find the maximum sum of a contiguous subarray in linear time. It works by maintaining two variables: `curr_sum` for the current subarray sum and `max_sum` for the maximum sum encountered so far.
+
+**Learning Summary:**
+- Learn how to optimize subarray problems using dynamic programming techniques.
+- Understand the importance of maintaining intermediate results to achieve linear time complexity.
 
 #### Q3: Check if a string is a palindrome
 ```ruby
@@ -48,6 +60,12 @@ def palindrome?(str)
   str == str.reverse
 end
 ```
+**Explanation:**
+A palindrome is a string that reads the same backward as forward. This method compares the string with its reversed version to determine if it is a palindrome.
+
+**Learning Summary:**
+- Understand the concept of palindromes.
+- Practice using Ruby's `reverse` method for string manipulation.
 
 ---
 
@@ -63,6 +81,12 @@ class Node
   end
 end
 ```
+**Explanation:**
+A singly linked list is a data structure where each node points to the next node in the sequence. This implementation defines a `Node` class with `val` for the value and `next` for the pointer to the next node.
+
+**Learning Summary:**
+- Learn the structure of a singly linked list.
+- Understand how to define and link nodes in Ruby.
 
 #### Q2: Reverse a linked list
 ```ruby
@@ -78,6 +102,12 @@ def reverse_list(head)
   prev
 end
 ```
+**Explanation:**
+Reversing a linked list involves iterating through the list and reversing the direction of the `next` pointer for each node. The `prev` pointer keeps track of the reversed portion of the list.
+
+**Learning Summary:**
+- Practice pointer manipulation in linked lists.
+- Understand iterative approaches to reversing linked lists.
 
 ---
 
@@ -90,6 +120,12 @@ stack.push(1)
 stack.push(2)
 stack.pop # => 2
 ```
+**Explanation:**
+A stack is a LIFO (Last In, First Out) data structure. Using Ruby arrays, `push` adds an element to the top of the stack, and `pop` removes the top element.
+
+**Learning Summary:**
+- Understand the LIFO principle.
+- Learn how to use Ruby arrays to implement stack operations.
 
 #### Q2: Implement a queue using an array
 ```ruby
@@ -98,6 +134,12 @@ queue.push(1)
 queue.push(2)
 queue.shift # => 1
 ```
+**Explanation:**
+A queue is a FIFO (First In, First Out) data structure. Using Ruby arrays, `push` adds an element to the end of the queue, and `shift` removes the first element.
+
+**Learning Summary:**
+- Understand the FIFO principle.
+- Learn how to use Ruby arrays to implement queue operations.
 
 ---
 
