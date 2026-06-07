@@ -54,6 +54,18 @@
         border-radius: 22px;
         overflow: hidden;
         box-shadow: 0 18px 44px rgba(16, 34, 62, 0.11);
+        position: relative;
+      }
+
+      .floating-actions {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 6px;
       }
 
       .hero {
@@ -167,6 +179,39 @@
 
       .contact a:hover {
         text-decoration: underline;
+      }
+
+      .hero-actions {
+        margin-top: 12px;
+        display: flex;
+        gap: 10px;
+      }
+
+      .download-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 12px;
+        min-width: 170px;
+        border-radius: 10px;
+        border: 1px solid #0b5ca8;
+        background: #0b5ca8;
+        color: #ffffff;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        text-decoration: none;
+        box-shadow: 0 6px 12px rgba(11, 92, 168, 0.24);
+      }
+
+      .download-btn.alt {
+        background: #ffffff;
+        color: #0b5ca8;
+      }
+
+      .download-btn:hover {
+        background: #0a4e90;
+        border-color: #0a4e90;
       }
 
       .content {
@@ -350,6 +395,19 @@
           width: 100%;
           border-radius: 10px;
         }
+
+        .hero-actions {
+          width: 100%;
+        }
+
+        .download-btn {
+          width: 100%;
+        }
+
+        .floating-actions {
+          right: 10px;
+          bottom: 10px;
+        }
       }
 
       @media print {
@@ -377,11 +435,20 @@
           break-inside: avoid;
           background: #ffffff;
         }
+
+        .hero-actions,
+        .floating-actions {
+          display: none;
+        }
       }
     </style>
   </head>
   <body>
     <main class="layout">
+      <div class="floating-actions">
+        <a class="download-btn" href="../gunjanpatel1202.pdf" download="Patel-Gunjan-Lakhandar-Resume.pdf">Download Resume</a>
+        <a class="download-btn alt" href="../gunjanpatel-portfolio-1202.pdf" download="Patel-Gunjan-Lakhandar-Portfolio.pdf">Download Portfolio</a>
+      </div>
       <header class="hero">
         <div class="hero-content">
           <h1>Patel Gunjan Lakhandar</h1>
