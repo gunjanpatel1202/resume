@@ -5,28 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Gunjan Patel - Staff Nurse resume with summary, clinical skills, experience, education, languages, and certificates."
+      content="Patel Gunjan Lakhandar - Staff Nurse resume with summary, clinical skills, experience, education, languages, and certificates."
     />
-    <title>Gunjan Patel | Staff Nurse</title>
+    <title>Patel Gunjan Lakhandar | Staff Nurse</title>
     <link
       rel="icon"
       type="image/svg+xml"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a6d77'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial, sans-serif' font-size='38' font-weight='700' fill='white'%3EG%3C/text%3E%3C/svg%3E"
     />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap");
 
       :root {
-        --bg-1: #f3f8f8;
-        --bg-2: #e7f0ff;
+        --bg-1: #edf4fb;
+        --bg-2: #f7fbff;
         --surface: #ffffff;
-        --surface-soft: #f7fbfb;
-        --ink: #1c2733;
-        --muted: #536172;
-        --accent: #0a6d77;
-        --accent-2: #1699a7;
-        --line: #d7e1e8;
-        --chip: #ecf7f9;
+        --surface-soft: #f7faff;
+        --ink: #142338;
+        --muted: #5a6f89;
+        --accent: #0b5ca8;
+        --accent-2: #2d7dd2;
+        --line: #d4e1ef;
+        --chip: #eff5ff;
+        --danger: #d7263d;
       }
 
       * {
@@ -35,45 +36,57 @@
 
       body {
         margin: 0;
-        font-family: "DM Sans", "Segoe UI", sans-serif;
+        font-family: "Manrope", "Segoe UI", sans-serif;
         background:
-          radial-gradient(circle at 8% 12%, rgba(22, 153, 167, 0.16), transparent 32%),
-          radial-gradient(circle at 90% 6%, rgba(100, 124, 255, 0.12), transparent 28%),
-          linear-gradient(130deg, var(--bg-1) 0%, var(--bg-2) 100%);
+          radial-gradient(circle at 8% 10%, rgba(45, 125, 210, 0.11), transparent 36%),
+          radial-gradient(circle at 92% 8%, rgba(11, 92, 168, 0.08), transparent 32%),
+          linear-gradient(140deg, var(--bg-1) 0%, var(--bg-2) 100%);
         color: var(--ink);
         line-height: 1.55;
       }
 
       .layout {
-        width: min(1120px, 94vw);
-        margin: 30px auto;
+        width: min(270mm, calc(100vw - 28px));
+        min-height: 297mm;
+        margin: 16px auto;
         background: var(--surface);
         border: 1px solid var(--line);
         border-radius: 22px;
         overflow: hidden;
-        box-shadow: 0 24px 58px rgba(28, 39, 51, 0.12);
+        box-shadow: 0 18px 44px rgba(16, 34, 62, 0.11);
       }
 
       .hero {
         padding: 34px 38px;
-        background: linear-gradient(116deg, #0c6e78 0%, #1699a7 52%, #6cc9c4 108%);
-        color: #ffffff;
+        background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+        color: var(--ink);
         position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 24px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 8px;
+        background: linear-gradient(90deg, var(--accent) 0%, var(--accent-2) 100%);
       }
 
       .hero::after {
         content: "";
         position: absolute;
-        right: -58px;
-        top: -58px;
-        width: 220px;
-        height: 220px;
+        right: -64px;
+        top: -76px;
+        width: 250px;
+        height: 250px;
         border-radius: 50%;
-        background: rgba(255, 255, 255, 0.12);
+        background: rgba(45, 125, 210, 0.08);
       }
 
       .hero h1 {
@@ -83,15 +96,29 @@
         letter-spacing: 0.2px;
         position: relative;
         z-index: 1;
+        color: #10263f;
       }
 
       .hero p {
         margin: 8px 0 0;
-        font-size: 1.06rem;
+        font-size: 1.02rem;
         letter-spacing: 0.2px;
-        opacity: 0.98;
+        color: #3a5d82;
         position: relative;
         z-index: 1;
+      }
+
+      .role-badge {
+        margin-top: 10px;
+        display: inline-block;
+        padding: 8px 13px;
+        border-radius: 999px;
+        background: #ffffff;
+        border: 1px solid #c6d8ee;
+        color: #12385f;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+        box-shadow: 0 4px 10px rgba(20, 54, 90, 0.08);
       }
 
       .hero-content {
@@ -107,34 +134,34 @@
       }
 
       .profile-img {
-        width: 160px;
-        height: 200px;
-        border-radius: 18px;
+        width: 172px;
+        height: 172px;
+        border-radius: 22px;
         object-fit: cover;
-        border: 4px solid rgba(255, 255, 255, 0.75);
-        box-shadow: 0 10px 24px rgba(12, 46, 49, 0.24);
-        background: rgba(255, 255, 255, 0.2);
+        border: 4px solid #ffffff;
+        box-shadow: 0 12px 22px rgba(21, 52, 92, 0.17);
+        background: #ffffff;
       }
 
       .contact {
-        margin-top: 16px;
+        margin-top: 14px;
         display: flex;
         flex-wrap: wrap;
         gap: 10px 14px;
-        font-size: 0.93rem;
+        font-size: 0.9rem;
         position: relative;
         z-index: 1;
       }
 
       .contact span {
-        background: rgba(255, 255, 255, 0.16);
-        border: 1px solid rgba(255, 255, 255, 0.22);
+        background: #ffffff;
+        border: 1px solid #cfdded;
         border-radius: 999px;
         padding: 6px 12px;
       }
 
       .contact a {
-        color: #ffffff;
+        color: #114a84;
         text-decoration: none;
       }
 
@@ -143,10 +170,10 @@
       }
 
       .content {
-        padding: 28px 32px 34px;
+        padding: 30px 32px 36px;
         display: grid;
         grid-template-columns: 1.45fr 1fr;
-        gap: 20px;
+        gap: 22px;
         align-items: start;
       }
 
@@ -157,18 +184,19 @@
 
       .card {
         border: 1px solid var(--line);
+        border-left: 5px solid var(--accent);
         border-radius: 16px;
         background: var(--surface-soft);
-        padding: 18px;
+        padding: 18px 18px 19px;
       }
 
       .section h2,
       .card h2 {
         margin: 0 0 10px;
-        font-size: 0.88rem;
+        font-size: 0.84rem;
         color: var(--accent);
         text-transform: uppercase;
-        letter-spacing: 1px;
+        letter-spacing: 1.2px;
         font-weight: 700;
       }
 
@@ -185,11 +213,19 @@
 
       .chip {
         padding: 7px 11px;
-        border: 1px solid #c8dbe1;
-        border-radius: 999px;
+        border: 1px solid #c8d9ee;
+        border-radius: 10px;
         background: var(--chip);
         font-size: 0.9rem;
-        color: #1e4650;
+        color: #1e4a79;
+        font-weight: 600;
+      }
+
+      .hl {
+        background: linear-gradient(transparent 62%, #d9ebff 62%);
+        color: #0a3f74;
+        font-weight: 700;
+        padding: 0 2px;
       }
 
       .experience-card {
@@ -208,7 +244,7 @@
 
       .experience-meta {
         margin: 6px 0 10px;
-        color: #5d6f83;
+        color: var(--muted);
         font-size: 0.93rem;
         font-weight: 500;
       }
@@ -230,7 +266,7 @@
 
       .edu-item {
         padding: 12px 13px;
-        border: 1px solid #ccdae4;
+        border: 1px solid #c9dde3;
         border-radius: 12px;
         background: #ffffff;
       }
@@ -260,6 +296,19 @@
         color: #314355;
       }
 
+      .cert-list li::marker,
+      .experience-list li::marker {
+        color: var(--accent);
+      }
+
+      .section h2::before,
+      .card h2::before {
+        content: "+";
+        color: var(--danger);
+        margin-right: 7px;
+        font-weight: 800;
+      }
+
       @media (max-width: 920px) {
         .content {
           grid-template-columns: 1fr;
@@ -283,8 +332,8 @@
         }
 
         .profile-img {
-          width: 126px;
-          height: 170px;
+          width: 132px;
+          height: 132px;
           border-radius: 14px;
         }
 
@@ -304,12 +353,18 @@
       }
 
       @media print {
+        @page {
+          size: A4;
+          margin: 0;
+        }
+
         body {
           background: #ffffff;
         }
 
         .layout {
-          width: 100%;
+          width: 210mm;
+          min-height: 297mm;
           margin: 0;
           border: 0;
           border-radius: 0;
@@ -330,7 +385,8 @@
       <header class="hero">
         <div class="hero-content">
           <h1>Patel Gunjan Lakhandar</h1>
-          <p>Staff Nurse</p>
+          <p>Clinical Nursing Professional focused on safe, compassionate patient care</p>
+          <div class="role-badge">Staff Nurse</div>
           <div class="contact">
             <span>Email: <a href="mailto:gunjanpatel1202@gmail.com">gunjanpatel1202@gmail.com</a></span>
             <span>Phone: <a href="tel:+917284957527">+91 7284 957 527</a></span>
@@ -348,9 +404,9 @@
           <article class="card section">
             <h2>Professional Summary</h2>
             <p>
-              Compassionate and dedicated B.Sc. Nursing graduate with strong theoretical knowledge and clinical skills in patient care.
+              Compassionate and dedicated <span class="hl">B.Sc. Nursing</span> graduate with strong theoretical knowledge and hands-on clinical skills in <span class="hl">patient care</span>.
               Currently working as a Staff Nurse at Brij Women&apos;s Hospital, Ahmedabad. Skilled in patient assessment,
-              medication administration, infection control, and maintaining patient records. Eager to contribute to a healthcare
+              <span class="hl">medication administration</span>, <span class="hl">infection control</span>, and maintaining <span class="hl">patient records</span>. Eager to contribute to a healthcare
               organization while continuously enhancing nursing competencies.
             </p>
           </article>
@@ -361,13 +417,13 @@
               <h3 class="experience-title">Staff Nurse, Brij Women&apos;s Hospital, Ahmedabad</h3>
               <p class="experience-meta">Ahmedabad, Gujarat | 03/2026 - Present</p>
               <ul class="experience-list">
-                <li>Provided comprehensive nursing care and support to patients.</li>
-                <li>Regularly assessed and monitored patients&apos; health conditions and vital parameters.</li>
+                <li>Provided comprehensive <span class="hl">nursing care</span> and support to patients.</li>
+                <li>Regularly assessed and monitored patients&apos; health conditions and <span class="hl">vital parameters</span>.</li>
                 <li>Administered prescribed medications safely and accurately.</li>
                 <li>Assisted doctors during examinations, treatments, and medical procedures.</li>
                 <li>Maintained accurate patient records and nursing documentation.</li>
-                <li>Guided patients and families on healthcare needs, treatment plans, and preventive care.</li>
-                <li>Ensured adherence to infection prevention, safety, and hospital protocols.</li>
+                <li>Guided patients and families on healthcare needs, treatment plans, and <span class="hl">preventive care</span>.</li>
+                <li>Ensured adherence to <span class="hl">infection prevention</span>, safety, and hospital protocols.</li>
               </ul>
             </div>
           </article>
@@ -396,15 +452,15 @@
             <h2>Clinical Skills</h2>
             <div class="chips">
               <span class="chip">Patient Care Management</span>
-              <span class="chip">Vital Signs Monitoring</span>
-              <span class="chip">Medication Administration</span>
               <span class="chip">Infection Control Practices</span>
-              <span class="chip">Wound Care</span>
-              <span class="chip">IV Cannulation Assistance</span>
               <span class="chip">Patient Assessment</span>
-              <span class="chip">Health Education</span>
-              <span class="chip">Documentation and Record Keeping</span>
               <span class="chip">Emergency Response Support</span>
+              <span class="chip">Vital Signs Monitoring</span>
+              <span class="chip">Wound Care</span>
+              <span class="chip">Health Education</span>
+              <span class="chip">Medication Administration</span>
+              <span class="chip">IV Cannulation Assistance</span>
+              <span class="chip">Documentation and Record Keeping</span>
             </div>
           </article>
 
